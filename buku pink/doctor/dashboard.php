@@ -458,7 +458,7 @@
                                 <div class="info-value" id="dueDate"></div>
                             </div>
                         </div>
-                        <a href="patient profile.php?id=<?php echo $row['patientID']; ?>" class="view-profile-btn" title="View or edit your personal information here!">
+                        <a href="patient profile.php?id=<?php echo $row['patientID']; ?>" class="view-profile-btn" title="View patient's personal information">
                             View Full Profile
                             <span class="btn-arrow">
                                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -582,20 +582,20 @@
                 ?>
 
         <div class="button-wrap">
-            <button class="white-box" onclick="window.location.href='health profile.php'" id="button-icon" title="View your health status!">
+            <button class="white-box" onclick="window.location.href='health profile.php'" id="button-icon" title="Redirect to health profile">
             <img src="../template/doctor-icon/health.png" alt="" class="icon">
             <h1>Health</h1>
-            <p style="font-size: 16px;">View your latest health test results!</p>
+            <p style="font-size: 16px;">Upload health test results or view medical history</p>
         </button>
-        <div class="white-box" onclick="window.location.href='fmc.php'" id="button-icon" title="Your baby's waiting..">
+        <div class="white-box" onclick="window.location.href='fmc.php'" id="button-icon" title="Redirect to Fetal Movement Count Chart">
             <img src="../template/doctor-icon/fmc.png" alt="" class="icon">
             <h1 style="font-size: 28px;">Fetal Kick Count</h1>
-            <p>Never forget to log your baby's movement</p>
+            <p>View patient's fetal movement count chart</p>
         </div>
-        <div class="white-box" onclick="window.location.href='appointment.php'" id="button-icon" title="You doctor's waiting!">
+        <div class="white-box" onclick="window.location.href='appointment.php'" id="button-icon" title="Redirect to appointment">
             <img src="../template/doctor-icon/appointment.png" alt="" class="icon">
             <h1>Appointment</h1>
-            <p>View your next appointment with your doctor</p>
+            <p>Schedule next appointment or view patient's appointment history</p>
         </div>
         </div>
 

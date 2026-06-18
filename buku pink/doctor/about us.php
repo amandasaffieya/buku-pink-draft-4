@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../template/staff.css">
+    <link rel="stylesheet" href="../template/patient.css">
     <title>About Us</title>
     <style>
         .main-content {
@@ -16,7 +16,8 @@
         }
 
         .contact-us {
-            background: linear-gradient(270deg,  rgb(0, 2, 32),rgb(0, 4, 60), rgb(0, 4, 96)); width: 100%;
+            background: linear-gradient(90deg, #d60d46 0%, #ff4d6d 50%, #ffb3c1 100%);
+            width: 100%;
             margin: 0;
             margin-top: 70px;
             opacity: 0.9;
@@ -25,8 +26,7 @@
             padding: 20px;
             overflow: hidden; 
         }
-        .contact-us a{color: white;}
-        .label-box h2{ color: #1d2a9f;}
+        .label-box h2{ color: #e91c56;}
         .pic{
             height: 200px;
             width: 200px;
@@ -34,7 +34,7 @@
         .white-box{
             border: 2px solid transparent; 
             width: 80%;
-            box-shadow: 0 4px 12px rgba(49, 50, 68, 0.14);
+            box-shadow: 0 4px 12px rgba(68, 49, 59, 0.14);
             display: flex;
             flex-direction: row;
             padding-bottom: 10px;
@@ -43,7 +43,7 @@
             margin-left: 110px;
             margin-bottom: 15px;
         }
-        .white-box:hover{border-color: #02136f;}
+        .white-box:hover{border-color: #d60d46;}
         .contact-us,.contact-content,.title-box,.white-box,.white-box img,.contact-content p{transition: border-color 0.3s ease, transform 0.3s ease-in-out;}
         .contact-us:hover,.contact-content:hover,.title-box:hover,.white-box:hover,.white-box img:hover,.contact-content p:hover{ transform:translateY(-4px);}
         .text-box{
@@ -69,8 +69,80 @@
             margin-top: 15px;    
             margin-bottom: 5px; 
         }
+        .vid-wrap {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+            background: black; 
+        }
 
-    
+        .vid-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+            
+
+            .vid-wrap .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400px;
+            height: 100%;
+            background: rgba(255, 0, 72, 0.8); 
+            color: white;
+            padding: 30px;
+            }
+            .vid-wrap .overlay2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            background: rgba(255, 0, 72, 0.8); 
+            color: white;
+            padding: 30px;
+            }
+
+            .vm-hero {
+                position: relative;
+                height: 300px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .vm-hero video {
+                width: 100%; height: 100%;
+                object-fit: cover;
+                position: absolute; inset: 0;
+            }
+            .vm-side-box {
+                position: absolute;
+                top: 0; bottom: 0;
+                width: 320px;
+                background: #d60d46b3;
+                display: flex; flex-direction: column;
+                justify-content: center;
+                padding: 32px 28px;
+                color: white;
+                z-index: 2;
+            }
+            .vm-side-left  { left: 0;  border-radius: 0 20px 20px 0; }
+            .vm-side-right { right: 0; border-radius: 20px 0 0 20px; }
+            .vm-side-box h2 { font-size: 26px; font-weight: 600; margin: 0 0 8px; }
+            .vm-side-box p  { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.9); margin: 0; }
+            .vm-dots { width: 36px; height: 4px; background: rgba(255,255,255,0.5); border-radius: 999px; margin: 10px 0; }
+            .title-box {
+                margin-top: 25px;  
+                margin-left: 50px;
+                margin-bottom: 10px;
+            }
+            .main-content {
+                margin: 0;
+                padding: 0;
+                padding-top:0;
+                
+            }
     </style>
     <script>
         function logout (){
@@ -97,9 +169,35 @@
         </div>
 
     <div class="main-content"> 
+        <h1 class="title-box"><span class="title">About Us</span></h1>
+            
+        <div class="vm-hero">
+        <video autoplay muted loop>
+            <source src="../template/vid1.mp4" type="video/mp4">
+        </video>
+        <div class="vm-side-box vm-side-left">
+            <h1>VISION</h1>
+            <div class="vm-dots"></div>
+            <p>To become a leading provider of quality healthcare services. It aims to ensure safe, efficient and accessible healthcare for all individuals.</p>
+        </div>
+        </div>
+
+        <div class="vm-hero">
+        <video autoplay muted loop>
+            <source src="../template/vid2.mp4" type="video/mp4">
+        </video>
+        <div class="vm-side-box vm-side-right">
+            <h1>MISSION</h1>
+            <div class="vm-dots"></div>
+            <p>To provide comprehensive and affordable healthcare services to the community with a goal to improve the overall health and quality of life.</p>
+        </div>
+        </div>
+
+
+
         <h1 class="title-box"><span class="title">Meet The Team</span></h1>
         <div class="white-box">
-            <img src="../template/doctor-icon/amanda.png" class="pic">
+            <img src="../template/patient-icon/amanda.png" class="pic">
             <div class="text-box">
                 <p><i>"Make mothers happy, that's all"</i></p>
                 <p style="font-size: 15px; opacity: 0.8;margin-left:15px">- Amanda Saffieya Binti Anis Shirwan</p>
@@ -108,7 +206,7 @@
             </div>
         </div>
         <div class="white-box">
-            <img src="../template/doctor-icon/amanda.png" class="pic">
+            <img src="../template/patient-icon/amanda.png" class="pic">
             <div class="text-box">
                 <p><i>"Make mothers happy, that's all"</i></p>
                 <p style="font-size: 15px; opacity: 0.8;margin-left:15px">- Amanda Saffieya Binti Anis Shirwan</p>
@@ -117,7 +215,7 @@
             </div>
         </div>
         <div class="white-box">
-            <img src="../template/doctor-icon/amanda.png" class="pic">
+            <img src="../template/patient-icon/amanda.png" class="pic">
             <div class="text-box">
                 <p><i>"Make mothers happy, that's all"</i></p>
                 <p style="font-size: 15px; opacity: 0.8;margin-left:15px">- Amanda Saffieya Binti Anis Shirwan</p>
@@ -126,7 +224,7 @@
             </div>
         </div>
         <div class="white-box">
-            <img src="../template/doctor-icon/amanda.png" class="pic">
+            <img src="../template/patient-icon/amanda.png" class="pic">
             <div class="text-box">
                 <p><i>"Make mothers happy, that's all"</i></p>
                 <p style="font-size: 15px; opacity: 0.8;margin-left:15px">- Amanda Saffieya Binti Anis Shirwan</p>
